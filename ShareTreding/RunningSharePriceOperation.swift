@@ -393,8 +393,6 @@ class RunningSharePriceOperation: NSObject {
             SFDBManager.getInstance().insertBankDetails(bankInfo: stockDetail)
             
             
-            
-            
             getRSIData(stockSymbol: stockDetail.shareSymbleName)
             
 //            DispatchQueue.main.async {

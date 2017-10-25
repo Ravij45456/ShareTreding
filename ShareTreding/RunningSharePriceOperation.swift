@@ -392,6 +392,9 @@ class RunningSharePriceOperation: NSObject {
             stockDetail.shareURL = runningSharePriceTemp.shareURL
             SFDBManager.getInstance().insertBankDetails(bankInfo: stockDetail)
             
+            
+            
+            
             getRSIData(stockSymbol: stockDetail.shareSymbleName)
             
 //            DispatchQueue.main.async {

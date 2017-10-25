@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3229B25C1F265E08006F271E /* STFavouriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3229B25B1F265E08006F271E /* STFavouriteTableViewController.swift */; };
+		411DEB151F312E3A002FB805 /* SFDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411DEB111F312E3A002FB805 /* SFDBManager.swift */; };
+		411DEB161F312E3A002FB805 /* SFQueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411DEB121F312E3A002FB805 /* SFQueryModel.swift */; };
+		411DEB231F313087002FB805 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 411DEB191F313087002FB805 /* FMDatabase.m */; };
+		411DEB241F313087002FB805 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 411DEB1B1F313087002FB805 /* FMDatabaseAdditions.m */; };
+		411DEB251F313087002FB805 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411DEB1D1F313087002FB805 /* FMDatabasePool.m */; };
+		411DEB261F313087002FB805 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 411DEB1F1F313087002FB805 /* FMDatabaseQueue.m */; };
+		411DEB271F313087002FB805 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 411DEB221F313087002FB805 /* FMResultSet.m */; };
+		411DEB2B1F31310C002FB805 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 411DEB291F31310C002FB805 /* libsqlite3.0.tbd */; };
+		411DEB2C1F31310C002FB805 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 411DEB2A1F31310C002FB805 /* libsqlite3.tbd */; };
+		411DEB2F1F3134AB002FB805 /* SFBankInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411DEB2E1F3134AB002FB805 /* SFBankInfo.swift */; };
+		4181CBA91F328CE800B05923 /* STSortTerm30DMAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181CBA81F328CE800B05923 /* STSortTerm30DMAViewController.swift */; };
+		5EC627A91DAE9BFA0056F328 /* String+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC627A81DAE9BFA0056F328 /* String+Addition.swift */; };
+		5ECF5FDF1DAFCABB0053B376 /* SortTermListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECF5FDE1DAFCABB0053B376 /* SortTermListViewController.swift */; };
+		5EDEC04D1D99671700EF5B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC04C1D99671700EF5B5E /* AppDelegate.swift */; };
+		5EDEC04F1D99671700EF5B5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC04E1D99671700EF5B5E /* ViewController.swift */; };
+		5EDEC0521D99671700EF5B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDEC0501D99671700EF5B5E /* Main.storyboard */; };
+		5EDEC0551D99671700EF5B5E /* ShareTreding.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC0531D99671700EF5B5E /* ShareTreding.xcdatamodeld */; };
+		5EDEC0571D99671700EF5B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDEC0561D99671700EF5B5E /* Assets.xcassets */; };
+		5EDEC05A1D99671700EF5B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDEC0581D99671700EF5B5E /* LaunchScreen.storyboard */; };
+		5EDEC0621D99675700EF5B5E /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDEC0611D99675700EF5B5E /* libxml2.2.tbd */; };
+		5EDEC06A1D99676F00EF5B5E /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC0651D99676F00EF5B5E /* TFHpple.m */; };
+		5EDEC06B1D99676F00EF5B5E /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC0671D99676F00EF5B5E /* TFHppleElement.m */; };
+		5EDEC06C1D99676F00EF5B5E /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC0691D99676F00EF5B5E /* XPathQuery.m */; };
+		5EDEC0721D99678900EF5B5E /* GainerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC06D1D99678900EF5B5E /* GainerListTableViewController.swift */; };
+		5EDEC0731D99678900EF5B5E /* GainerChartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC06E1D99678900EF5B5E /* GainerChartListViewController.swift */; };
+		5EDEC0741D99678900EF5B5E /* ShareRuningPriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC06F1D99678900EF5B5E /* ShareRuningPriceModel.swift */; };
+		5EDEC0751D99678900EF5B5E /* RunningSharePriceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC0701D99678900EF5B5E /* RunningSharePriceOperation.swift */; };
+		5EDEC0761D99678900EF5B5E /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC0711D99678900EF5B5E /* Extention.swift */; };
+		5EDEC07B1D9969FE00EF5B5E /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC0781D9969FE00EF5B5E /* Tutorial.m */; };
+		5EDEC07C1D9969FE00EF5B5E /* Contributor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEC07A1D9969FE00EF5B5E /* Contributor.m */; };
+		5EDEC07E1D996DC900EF5B5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDEC07D1D996DC800EF5B5E /* CoreGraphics.framework */; };
+		5EF820031D9A81D100DD8F54 /* SelectedShareDetailOnWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF820021D9A81D100DD8F54 /* SelectedShareDetailOnWebViewViewController.swift */; };
+		5EF820051D9A904D00DD8F54 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF820041D9A904D00DD8F54 /* CoreDataModel.swift */; };
+		5EF820071D9AB90300DD8F54 /* GainerListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF820061D9AB90300DD8F54 /* GainerListTable.swift */; };
+		8C6966401DE818DA00C3C24E /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69663F1DE818DA00C3C24E /* SwiftLoader.swift */; };
+		8C6966431DE8190A00C3C24E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6966411DE8190A00C3C24E /* Constant.swift */; };
+		8C6966441DE8190A00C3C24E /* SFUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6966421DE8190A00C3C24E /* SFUtility.swift */; };
+		8C7422201DE6D4A8001B59B7 /* STSMAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C74221F1DE6D4A8001B59B7 /* STSMAViewController.swift */; };
+		EBACBDD3F89349DAB0FD8A5C /* Pods_ShareTreding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6672B34B256395B2FB7B2BFE /* Pods_ShareTreding.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3229B25B1F265E08006F271E /* STFavouriteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STFavouriteTableViewController.swift; sourceTree = "<group>"; };
+		411DEB111F312E3A002FB805 /* SFDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDBManager.swift; sourceTree = "<group>"; };
+		411DEB121F312E3A002FB805 /* SFQueryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFQueryModel.swift; sourceTree = "<group>"; };
+		411DEB181F313087002FB805 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		411DEB191F313087002FB805 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		411DEB1A1F313087002FB805 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		411DEB1B1F313087002FB805 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		411DEB1C1F313087002FB805 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		411DEB1D1F313087002FB805 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		411DEB1E1F313087002FB805 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		411DEB1F1F313087002FB805 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		411DEB201F313087002FB805 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		411DEB211F313087002FB805 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		411DEB221F313087002FB805 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		411DEB291F31310C002FB805 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		411DEB2A1F31310C002FB805 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		411DEB2E1F3134AB002FB805 /* SFBankInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBankInfo.swift; sourceTree = "<group>"; };
+		4181CBA81F328CE800B05923 /* STSortTerm30DMAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSortTerm30DMAViewController.swift; sourceTree = "<group>"; };
+		5EC627A81DAE9BFA0056F328 /* String+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Addition.swift"; sourceTree = "<group>"; };
+		5ECF5FDE1DAFCABB0053B376 /* SortTermListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortTermListViewController.swift; sourceTree = "<group>"; };
+		5EDEC0491D99671600EF5B5E /* ShareTreding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareTreding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EDEC04C1D99671700EF5B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EDEC04E1D99671700EF5B5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5EDEC0511D99671700EF5B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EDEC0541D99671700EF5B5E /* ShareTreding.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShareTreding.xcdatamodel; sourceTree = "<group>"; };
+		5EDEC0561D99671700EF5B5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EDEC0591D99671700EF5B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5EDEC05B1D99671700EF5B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EDEC0611D99675700EF5B5E /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		5EDEC0631D99676E00EF5B5E /* ShareTreding-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShareTreding-Bridging-Header.h"; sourceTree = "<group>"; };
+		5EDEC0641D99676F00EF5B5E /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		5EDEC0651D99676F00EF5B5E /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		5EDEC0661D99676F00EF5B5E /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		5EDEC0671D99676F00EF5B5E /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		5EDEC0681D99676F00EF5B5E /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		5EDEC0691D99676F00EF5B5E /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		5EDEC06D1D99678900EF5B5E /* GainerListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GainerListTableViewController.swift; sourceTree = "<group>"; };
+		5EDEC06E1D99678900EF5B5E /* GainerChartListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GainerChartListViewController.swift; sourceTree = "<group>"; };
+		5EDEC06F1D99678900EF5B5E /* ShareRuningPriceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareRuningPriceModel.swift; sourceTree = "<group>"; };
+		5EDEC0701D99678900EF5B5E /* RunningSharePriceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningSharePriceOperation.swift; sourceTree = "<group>"; };
+		5EDEC0711D99678900EF5B5E /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		5EDEC0771D9969FE00EF5B5E /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
+		5EDEC0781D9969FE00EF5B5E /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
+		5EDEC0791D9969FE00EF5B5E /* Contributor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contributor.h; sourceTree = "<group>"; };
+		5EDEC07A1D9969FE00EF5B5E /* Contributor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contributor.m; sourceTree = "<group>"; };
+		5EDEC07D1D996DC800EF5B5E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5EF820021D9A81D100DD8F54 /* SelectedShareDetailOnWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedShareDetailOnWebViewViewController.swift; sourceTree = "<group>"; };
+		5EF820041D9A904D00DD8F54 /* CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		5EF820061D9AB90300DD8F54 /* GainerListTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GainerListTable.swift; sourceTree = "<group>"; };
+		63DE2680B9FAE755443A60CD /* Pods-ShareTreding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareTreding.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareTreding/Pods-ShareTreding.release.xcconfig"; sourceTree = "<group>"; };
+		6672B34B256395B2FB7B2BFE /* Pods_ShareTreding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareTreding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B36410DBB7B32DD35CF0FF /* Pods-ShareTreding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareTreding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareTreding/Pods-ShareTreding.debug.xcconfig"; sourceTree = "<group>"; };
+		8C69663F1DE818DA00C3C24E /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
+		8C6966411DE8190A00C3C24E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8C6966421DE8190A00C3C24E /* SFUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUtility.swift; sourceTree = "<group>"; };
+		8C74221F1DE6D4A8001B59B7 /* STSMAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSMAViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EDEC0461D99671600EF5B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411DEB2B1F31310C002FB805 /* libsqlite3.0.tbd in Frameworks */,
+				411DEB2C1F31310C002FB805 /* libsqlite3.tbd in Frameworks */,
+				5EDEC07E1D996DC900EF5B5E /* CoreGraphics.framework in Frameworks */,
+				5EDEC0621D99675700EF5B5E /* libxml2.2.tbd in Frameworks */,
+				EBACBDD3F89349DAB0FD8A5C /* Pods_ShareTreding.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		411DEB101F312E3A002FB805 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				411DEB111F312E3A002FB805 /* SFDBManager.swift */,
+				411DEB121F312E3A002FB805 /* SFQueryModel.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		411DEB131F312E3A002FB805 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				411DEB171F313087002FB805 /* FMDB */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		411DEB171F313087002FB805 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				411DEB181F313087002FB805 /* FMDatabase.h */,
+				411DEB191F313087002FB805 /* FMDatabase.m */,
+				411DEB1A1F313087002FB805 /* FMDatabaseAdditions.h */,
+				411DEB1B1F313087002FB805 /* FMDatabaseAdditions.m */,
+				411DEB1C1F313087002FB805 /* FMDatabasePool.h */,
+				411DEB1D1F313087002FB805 /* FMDatabasePool.m */,
+				411DEB1E1F313087002FB805 /* FMDatabaseQueue.h */,
+				411DEB1F1F313087002FB805 /* FMDatabaseQueue.m */,
+				411DEB201F313087002FB805 /* FMDB.h */,
+				411DEB211F313087002FB805 /* FMResultSet.h */,
+				411DEB221F313087002FB805 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		411DEB281F31310C002FB805 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				411DEB291F31310C002FB805 /* libsqlite3.0.tbd */,
+				411DEB2A1F31310C002FB805 /* libsqlite3.tbd */,
+				6672B34B256395B2FB7B2BFE /* Pods_ShareTreding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		411DEB2D1F3134AB002FB805 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				411DEB2E1F3134AB002FB805 /* SFBankInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5EDEC0401D99671600EF5B5E = {
+			isa = PBXGroup;
+			children = (
+				5EDEC07D1D996DC800EF5B5E /* CoreGraphics.framework */,
+				5EDEC0611D99675700EF5B5E /* libxml2.2.tbd */,
+				5EDEC0771D9969FE00EF5B5E /* Tutorial.h */,
+				5EDEC0781D9969FE00EF5B5E /* Tutorial.m */,
+				5EDEC0791D9969FE00EF5B5E /* Contributor.h */,
+				5EDEC07A1D9969FE00EF5B5E /* Contributor.m */,
+				5EDEC04B1D99671600EF5B5E /* ShareTreding */,
+				5EDEC04A1D99671600EF5B5E /* Products */,
+				411DEB281F31310C002FB805 /* Frameworks */,
+				C10E96C4ED6E27E6E093A776 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5EDEC04A1D99671600EF5B5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EDEC0491D99671600EF5B5E /* ShareTreding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EDEC04B1D99671600EF5B5E /* ShareTreding */ = {
+			isa = PBXGroup;
+			children = (
+				411DEB2D1F3134AB002FB805 /* Model */,
+				8C6966411DE8190A00C3C24E /* Constant.swift */,
+				8C6966421DE8190A00C3C24E /* SFUtility.swift */,
+				8C69663F1DE818DA00C3C24E /* SwiftLoader.swift */,
+				411DEB101F312E3A002FB805 /* DB */,
+				411DEB131F312E3A002FB805 /* Third Party */,
+				8C7AE5151DBDE9A200E406DE /* WebService */,
+				5EDEC0641D99676F00EF5B5E /* TFHpple.h */,
+				5EDEC0651D99676F00EF5B5E /* TFHpple.m */,
+				5EDEC0661D99676F00EF5B5E /* TFHppleElement.h */,
+				5EDEC0671D99676F00EF5B5E /* TFHppleElement.m */,
+				5EDEC0681D99676F00EF5B5E /* XPathQuery.h */,
+				5EDEC0691D99676F00EF5B5E /* XPathQuery.m */,
+				5EDEC04C1D99671700EF5B5E /* AppDelegate.swift */,
+				5EDEC04E1D99671700EF5B5E /* ViewController.swift */,
+				5EDEC06D1D99678900EF5B5E /* GainerListTableViewController.swift */,
+				5EF820021D9A81D100DD8F54 /* SelectedShareDetailOnWebViewViewController.swift */,
+				3229B25B1F265E08006F271E /* STFavouriteTableViewController.swift */,
+				5EF820041D9A904D00DD8F54 /* CoreDataModel.swift */,
+				5EDEC06E1D99678900EF5B5E /* GainerChartListViewController.swift */,
+				5EDEC06F1D99678900EF5B5E /* ShareRuningPriceModel.swift */,
+				5EDEC0701D99678900EF5B5E /* RunningSharePriceOperation.swift */,
+				5ECF5FDE1DAFCABB0053B376 /* SortTermListViewController.swift */,
+				4181CBA81F328CE800B05923 /* STSortTerm30DMAViewController.swift */,
+				8C74221F1DE6D4A8001B59B7 /* STSMAViewController.swift */,
+				5EDEC0711D99678900EF5B5E /* Extention.swift */,
+				5EC627A81DAE9BFA0056F328 /* String+Addition.swift */,
+				5EF820081D9AB90700DD8F54 /* CoreDataModel */,
+				5EDEC0501D99671700EF5B5E /* Main.storyboard */,
+				5EDEC0561D99671700EF5B5E /* Assets.xcassets */,
+				5EDEC0581D99671700EF5B5E /* LaunchScreen.storyboard */,
+				5EDEC05B1D99671700EF5B5E /* Info.plist */,
+				5EDEC0531D99671700EF5B5E /* ShareTreding.xcdatamodeld */,
+				5EDEC0631D99676E00EF5B5E /* ShareTreding-Bridging-Header.h */,
+			);
+			path = ShareTreding;
+			sourceTree = "<group>";
+		};
+		5EF820081D9AB90700DD8F54 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				5EF820061D9AB90300DD8F54 /* GainerListTable.swift */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		8C7AE5151DBDE9A200E406DE /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
+		C10E96C4ED6E27E6E093A776 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67B36410DBB7B32DD35CF0FF /* Pods-ShareTreding.debug.xcconfig */,
+				63DE2680B9FAE755443A60CD /* Pods-ShareTreding.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EDEC0481D99671600EF5B5E /* ShareTreding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EDEC05E1D99671700EF5B5E /* Build configuration list for PBXNativeTarget "ShareTreding" */;
+			buildPhases = (
+				72DCADC0EEBE36840517527B /* [CP] Check Pods Manifest.lock */,
+				5EDEC0451D99671600EF5B5E /* Sources */,
+				5EDEC0461D99671600EF5B5E /* Frameworks */,
+				5EDEC0471D99671600EF5B5E /* Resources */,
+				E325F05C5BB680226BA241D4 /* [CP] Embed Pods Frameworks */,
+				FF13A970A9400288DF8CB593 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareTreding;
+			productName = ShareTreding;
+			productReference = 5EDEC0491D99671600EF5B5E /* ShareTreding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EDEC0411D99671600EF5B5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ST;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Chetu;
+				TargetAttributes = {
+					5EDEC0481D99671600EF5B5E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2PWA33J847;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5EDEC0441D99671600EF5B5E /* Build configuration list for PBXProject "ShareTreding" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EDEC0401D99671600EF5B5E;
+			productRefGroup = 5EDEC04A1D99671600EF5B5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EDEC0481D99671600EF5B5E /* ShareTreding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EDEC0471D99671600EF5B5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDEC05A1D99671700EF5B5E /* LaunchScreen.storyboard in Resources */,
+				5EDEC0571D99671700EF5B5E /* Assets.xcassets in Resources */,
+				5EDEC0521D99671700EF5B5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72DCADC0EEBE36840517527B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareTreding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E325F05C5BB680226BA241D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShareTreding/Pods-ShareTreding-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareTreding/Pods-ShareTreding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF13A970A9400288DF8CB593 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareTreding/Pods-ShareTreding-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EDEC0451D99671600EF5B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECF5FDF1DAFCABB0053B376 /* SortTermListViewController.swift in Sources */,
+				4181CBA91F328CE800B05923 /* STSortTerm30DMAViewController.swift in Sources */,
+				5EDEC04F1D99671700EF5B5E /* ViewController.swift in Sources */,
+				5EC627A91DAE9BFA0056F328 /* String+Addition.swift in Sources */,
+				411DEB161F312E3A002FB805 /* SFQueryModel.swift in Sources */,
+				3229B25C1F265E08006F271E /* STFavouriteTableViewController.swift in Sources */,
+				5EDEC0731D99678900EF5B5E /* GainerChartListViewController.swift in Sources */,
+				5EDEC0721D99678900EF5B5E /* GainerListTableViewController.swift in Sources */,
+				5EF820051D9A904D00DD8F54 /* CoreDataModel.swift in Sources */,
+				5EF820031D9A81D100DD8F54 /* SelectedShareDetailOnWebViewViewController.swift in Sources */,
+				5EDEC0741D99678900EF5B5E /* ShareRuningPriceModel.swift in Sources */,
+				8C6966401DE818DA00C3C24E /* SwiftLoader.swift in Sources */,
+				8C6966441DE8190A00C3C24E /* SFUtility.swift in Sources */,
+				8C7422201DE6D4A8001B59B7 /* STSMAViewController.swift in Sources */,
+				5EDEC04D1D99671700EF5B5E /* AppDelegate.swift in Sources */,
+				5EDEC07C1D9969FE00EF5B5E /* Contributor.m in Sources */,
+				411DEB231F313087002FB805 /* FMDatabase.m in Sources */,
+				5EDEC07B1D9969FE00EF5B5E /* Tutorial.m in Sources */,
+				411DEB2F1F3134AB002FB805 /* SFBankInfo.swift in Sources */,
+				5EF820071D9AB90300DD8F54 /* GainerListTable.swift in Sources */,
+				8C6966431DE8190A00C3C24E /* Constant.swift in Sources */,
+				5EDEC0551D99671700EF5B5E /* ShareTreding.xcdatamodeld in Sources */,
+				5EDEC06A1D99676F00EF5B5E /* TFHpple.m in Sources */,
+				5EDEC06C1D99676F00EF5B5E /* XPathQuery.m in Sources */,
+				5EDEC0751D99678900EF5B5E /* RunningSharePriceOperation.swift in Sources */,
+				411DEB241F313087002FB805 /* FMDatabaseAdditions.m in Sources */,
+				411DEB271F313087002FB805 /* FMResultSet.m in Sources */,
+				5EDEC0761D99678900EF5B5E /* Extention.swift in Sources */,
+				411DEB251F313087002FB805 /* FMDatabasePool.m in Sources */,
+				411DEB151F312E3A002FB805 /* SFDBManager.swift in Sources */,
+				5EDEC06B1D99676F00EF5B5E /* TFHppleElement.m in Sources */,
+				411DEB261F313087002FB805 /* FMDatabaseQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5EDEC0501D99671700EF5B5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EDEC0511D99671700EF5B5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5EDEC0581D99671700EF5B5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EDEC0591D99671700EF5B5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EDEC05C1D99671700EF5B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		5EDEC05D1D99671700EF5B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EDEC05F1D99671700EF5B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B36410DBB7B32DD35CF0FF /* Pods-ShareTreding.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2PWA33J847;
+				INFOPLIST_FILE = ShareTreding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.patel14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShareTreding/ShareTreding-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5EDEC0601D99671700EF5B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63DE2680B9FAE755443A60CD /* Pods-ShareTreding.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2PWA33J847;
+				INFOPLIST_FILE = ShareTreding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.patel14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShareTreding/ShareTreding-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EDEC0441D99671600EF5B5E /* Build configuration list for PBXProject "ShareTreding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EDEC05C1D99671700EF5B5E /* Debug */,
+				5EDEC05D1D99671700EF5B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EDEC05E1D99671700EF5B5E /* Build configuration list for PBXNativeTarget "ShareTreding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EDEC05F1D99671700EF5B5E /* Debug */,
+				5EDEC0601D99671700EF5B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5EDEC0531D99671700EF5B5E /* ShareTreding.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5EDEC0541D99671700EF5B5E /* ShareTreding.xcdatamodel */,
+			);
+			currentVersion = 5EDEC0541D99671700EF5B5E /* ShareTreding.xcdatamodel */;
+			path = ShareTreding.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5EDEC0411D99671600EF5B5E /* Project object */;
+}
